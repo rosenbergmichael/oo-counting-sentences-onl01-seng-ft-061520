@@ -19,7 +19,7 @@ class String
 
  
   def count_sentences
-    self.compact.reject{|r| r.empty? if r.class == String}
+    self.delete_if {|c| c.empty?
     self.split(/\.|\?|\!/).count
   end
 
