@@ -20,7 +20,7 @@ class String
  
   def count_sentences
     self.split(/\.|\?|\!/).count
-    self.delete
+    self.delete_if("_")
     
   end
 
