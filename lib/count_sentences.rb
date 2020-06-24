@@ -19,7 +19,7 @@ class String
 
  
   def count_sentences
-    self.delete_if(&:blank?)
+    self.select(&:presence)
     self.split(/\.|\?|\!/).count
   end
 
