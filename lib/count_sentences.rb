@@ -19,7 +19,7 @@ class String
 
  
   def count_sentences
-    unless self.split(/\.|\?|\!/).count
+    if self.split(/\.|\?|\!/) 
     self.split(/\.|\?|\!/).count
     binding.pry 
   end
