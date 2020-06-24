@@ -19,7 +19,7 @@ class String
 
  
   def count_sentences
-    self.select(&:presence)
+    self.compact.reject{|r| r.empty? if r.class == String}
     self.split(/\.|\?|\!/).count
   end
 
