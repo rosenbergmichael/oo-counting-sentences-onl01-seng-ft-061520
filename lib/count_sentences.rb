@@ -19,7 +19,7 @@ class String
 
  
   def count_sentences
-    self.count 
+    self.split
   end
 
 
