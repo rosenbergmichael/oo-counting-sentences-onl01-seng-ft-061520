@@ -21,7 +21,6 @@ class String
   def count_sentences
     if self.split(/\.|\?|\!/)==""
     self.split(/\.|\?|\!/).count
-    binding.pry 
    end 
   end
 
